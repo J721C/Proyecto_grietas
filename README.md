@@ -38,7 +38,12 @@ El dataset se empleó para entrenar, validar y evaluar el modelo de clasificaci�
 
 ## 6. Resultados preliminares
 
-Durante las pruebas realizadas con el conjunto de test, el modelo obtuvo una exactitud aproximada del 99,77 %. Este resultado corresponde a la evaluación sobre el conjunto de datos utilizado y no garantiza el mismo desempeño en fotografías tomadas en condiciones reales.
+Durante las pruebas realizadas con el conjunto de test, el modelo obtuvo una exactitud aproximada del 98,87 %. Este resultado corresponde a la evaluación sobre el conjunto de datos utilizado y no garantiza el mismo desempeño en fotografías tomadas en condiciones reales.
+Adjunto capturas de los resultados, tanto de precisión como de pérdida: 
+<img width="897" height="589" alt="image" src="https://github.com/user-attachments/assets/7b3e6804-6e60-4961-8fe6-f996c320fe1f" />
+<img width="874" height="589" alt="image" src="https://github.com/user-attachments/assets/cd9e732e-a122-4fc9-925a-d6f5aba015b2" />
+
+
 
 También se realizaron pruebas preliminares con imágenes externas al dataset para observar el comportamiento del clasificador.
 
