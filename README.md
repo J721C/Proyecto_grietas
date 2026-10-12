@@ -43,13 +43,13 @@ Adjunto capturas de los resultados, tanto de precisión como de pérdida:
 <img width="897" height="589" alt="image" src="https://github.com/user-attachments/assets/7b3e6804-6e60-4961-8fe6-f996c320fe1f" />
 <img width="874" height="589" alt="image" src="https://github.com/user-attachments/assets/cd9e732e-a122-4fc9-925a-d6f5aba015b2" />
 
-En cuanto uso real, se se probó con 2 fotos reales:
+También se realizaron pruebas preliminares con imágenes externas al dataset para observar el comportamiento del clasificador, las cuales fueran estas dos:
 
 <img width="616" height="657" alt="image" src="https://github.com/user-attachments/assets/9b771051-c9ca-421d-a264-d8bfd07ed025" />
 <img width="603" height="622" alt="image" src="https://github.com/user-attachments/assets/fc974352-c85e-4b96-9e36-cb1869788323" />
 
 
-También se realizaron pruebas preliminares con imágenes externas al dataset para observar el comportamiento del clasificador.
+
 
 ## 7. Limitaciones
 
