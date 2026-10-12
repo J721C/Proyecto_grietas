@@ -55,7 +55,7 @@ También se realizaron pruebas preliminares con imágenes externas al dataset pa
 
 - Las predicciones pueden verse afectadas por la iluminación, la textura y las características de las superficies.
 - Una predicción positiva no constituye por sí sola una confirmación de daño estructural.
-- El sistema es un prototipo académico y no sustituye una inspección profesional.
+- El sistema no sustituye una inspección profesional.
 
 ## 8. Estado del proyecto
 
