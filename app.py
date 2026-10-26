@@ -33,7 +33,7 @@ def calcular_inclinacion(imagen_bgr):
         
     imagen_resultado = imagen_bgr.copy()
 
-     inclinaciones = []
+    inclinaciones = []
 
      for linea in lineas:
          coordenadas = np.asarray(linea).reshape(-1)
