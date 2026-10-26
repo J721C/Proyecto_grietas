@@ -6,13 +6,12 @@ import math
 from PIL import Image
 import os
 
-# Configuración de la página
+
 st.set_page_config(page_title="Detector de Grietas Móvil", layout="centered")
 st.title("📱 Analizador de Muros en Tiempo Real")
 st.write("Toma una foto con tu celular o sube una imagen para evaluar la seguridad estructural de forma inmediata.")
 
-# Ruta del modelo en Drive
-RUTA_MODELO = "/content/drive/MyDrive/proyecto_grietas-1/modelo_grietas.keras"
+RUTA_MODELO = os.path.join(os.path.dirname(os.path.abspath(__file__)), "modelo_grietas.keras")
 
 @st.cache_resource
 def cargar_modelo():
