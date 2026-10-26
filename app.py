@@ -34,8 +34,7 @@ def calcular_inclinacion(imagen_bgr):
     imagen_resultado = imagen_bgr.copy()
 
     inclinaciones = []
-
-     for linea in lineas:
+    for linea in lineas:
          coordenadas = np.asarray(linea).reshape(-1)
 
           if coordenadas.size != 4:
@@ -54,6 +53,8 @@ def calcular_inclinacion(imagen_bgr):
            angulo = math.degrees(math.atan2(y2 - y1, x2 - x1))
            inclinacion = abs(90 - abs(angulo))
            inclinaciones.append(inclinacion)
+
+     
 
         
     return np.mean(inclinaciones), imagen_resultado
