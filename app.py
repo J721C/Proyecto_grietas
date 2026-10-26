@@ -69,13 +69,19 @@ if archivo_imagen is not None:
     
     # --- 1. CLASIFICACIÓN (MODELO IA) ---
     if model is not None:
-        imagen_prep = imagen_pil.resize((224, 224))
-        imagen_array = np.array(imagen_prep)
+        imagen_prep = imagen_pil.convert("RGB").resize((224, 224))
+        imagen_array = np.array(imagen_prep, dtype=np.float32)
+
+        imagen_array = tf.keras.applications.mobilenet_v2.preprocess_input(
+            imagen_array
+        )
+
         imagen_batch = np.expand_dims(imagen_array, axis=0)
-        
+
         prediccion = model.predict(imagen_batch, verbose=0)
         prob_sin_grieta = prediccion[0][0] * 100
         prob_grieta = prediccion[0][1] * 100
+
         
         st.subheader("Resultados del Análisis de IA")
         if prob_grieta > prob_sin_grieta:
