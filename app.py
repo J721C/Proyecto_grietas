@@ -40,12 +40,13 @@ def cargar_modelo():
 
 
 def preparar_imagen(imagen_pil):
-    """Prepara una imagen PIL para MobileNetV2."""
+    """Prepara una imagen PIL para el modelo."""
     imagen = imagen_pil.convert("RGB").resize(TAMANO_MODELO)
     imagen_array = np.asarray(imagen, dtype=np.float32)
-    imagen_array = tf.keras.applications.mobilenet_v2.preprocess_input(
-        imagen_array
-    )
+
+    # El modelo ya aplica internamente mobilenet_v2.preprocess_input.
+    # Por eso la aplicación debe enviar los píxeles en el rango [0, 255]
+    # y no volver a normalizarlos aquí.
     return np.expand_dims(imagen_array, axis=0)
 
 
