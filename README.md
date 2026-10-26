@@ -147,5 +147,5 @@ El archivo `modelo_grietas.keras` debe permanecer en la raíz del proyecto para 
 
 ## 13. Autoría
 
-- Juan Sebastian Lopez Moreno
-- Maria Jose Izquierdo Osorio
+- Juan Sebastian Lopez Moreno.
+- Maria Jose Izquierdo Osorio.
