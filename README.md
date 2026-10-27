@@ -128,6 +128,26 @@ También se realizaron pruebas preliminares con imágenes externas al dataset pa
 
 El archivo `modelo_grietas.keras` debe permanecer en la raíz del proyecto para que la aplicación pueda cargarlo correctamente.
 
+
+## 📈 Evaluación del Modelo y Matriz de Confusión
+
+El modelo de clasificación de grietas fue evaluado con un conjunto de prueba independiente, obteniendo un rendimiento sobresaliente con una exactitud global (*Accuracy*) superior al 99.7%.
+
+### Matriz de Confusión
+
+
+
+| Clase Real / Predicha | Predicho: Sin grieta | Predicho: Grieta |
+|-----------------------|----------------------|------------------|
+| **Real: Sin grieta**  | **3,018** (VN)       | **11** (FP)      |
+| **Real: Grieta**      | **3** (FN)           | **2,952** (VP)   |
+
+### Resumen de Métricas
+* **Total de muestras evaluadas:** 5,984
+* **Exactitud (Accuracy):** ~99.77%
+* **Falsos Positivos:** 11 imágenes de superficies sin grietas clasificadas incorrectamente como dañadas.
+* **Falsos Negativos:** 3 grietas reales que el modelo omitió o no detectó.
+
 ## 11. Limitaciones
 
 - Las predicciones pueden verse afectadas por la iluminación, la textura, el enfoque y las características de las superficies.
