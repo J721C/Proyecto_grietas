@@ -1,5 +1,30 @@
 # Proyecto de Detección de Grietas en Superficies de Concreto mediante Inteligencia Artificial
 
+##  Contexto del Proyecto
+La inspección visual de elementos estructurales en concreto (como edificaciones, puentes, presas y pavimentos) es un pilar fundamental en la ingeniería civil para garantizar la seguridad operativa y prevenir fallas estructurales. Tradicionalmente, estas inspecciones se realizan de forma manual, lo que resulta ser un proceso lento, costoso, dependiente de la experiencia del inspector y expuesto a limitaciones visuales en zonas de difícil acceso.
+
+##  Antecedentes
+En la última década, la aplicación de la visión por computador y el aprendizaje profundo (*Deep Learning*), especialmente mediante Redes Neuronales Convolucionales (CNN), ha transformado el mantenimiento predictivo e industrial. Diversas investigaciones han demostrado que los modelos automatizados de clasificación de imágenes superan la subjetividad humana, permitiendo un monitoreo rápido, continuo y estandarizado del estado de conservación de las infraestructuras.
+
+### Objetivos
+* **Objetivo General:** Desarrollar, entrenar y desplegar un modelo de clasificación de imágenes mediante inteligencia artificial capaz de identificar la presencia de grietas en superficies con alta confiabilidad.
+* **Objetivos Específicos:**
+  * Procesar y analizar un conjunto de datos (*dataset*) representativo de imágenes de superficies con y sin grietas.
+  * Entrenar una arquitectura de red neuronal optimizada para minimizar los falsos negativos en la detección de fallas.
+  * Validar el desempeño del modelo mediante métricas cuantitativas y el análisis detallado de la matriz de confusión.
+  * Implementar una aplicación web interactiva que permita realizar pruebas con fotografías propias y visualizar las probabilidades de clasificación en tiempo real.
+ 
+  ## ⚠️ Problema de Riesgo
+La falta de detección temprana de grietas y fisuras en superficies estructurales conlleva riesgos críticos, entre ellos:
+* **Colapsos estructurales imprevistos:** Riesgo directo contra la vida humana y la seguridad pública.
+* **Costos exponenciales de reparación:** Una fisura ignorada evoluciona en daños mayores que requieren intervenciones estructurales complejas.
+* **Sesgo e invisibilidad en la inspección humana:** Zonas de alta altura o espacios confinados dificultan una revisión exhaustiva por parte de operarios humanos.
+
+##  Descripción y Objetivos Ampliados
+
+### Descripción
+Este proyecto implementa una solución integral basada en aprendizaje automático para la detección automática de grietas en superficies. Utilizando un modelo de redes neuronales (`modelo_grietas.keras`), el sistema es capaz de clasificar imágenes con alta precisión y se encuentra integrado en una interfaz web interactiva desarrollada con Streamlit (`aplicacion.py`) para facilitar su uso práctico.
+
 ## 1. Descripción del proyecto
 
 Este proyecto académico consiste en el desarrollo de una aplicación de inteligencia artificial para analizar imágenes de superficies de concreto y ofrecer una evaluación visual orientativa sobre la presencia de grietas y la inclinación de elementos cercanos a la vertical.
