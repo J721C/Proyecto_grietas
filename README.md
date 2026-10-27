@@ -135,6 +135,7 @@ El modelo de clasificación de grietas fue evaluado con un conjunto de prueba in
 
 ### Matriz de Confusión
 
+<img width="880" height="627" alt="image" src="https://github.com/user-attachments/assets/68a46ce9-08c0-443b-a893-2b3074ae2cf3" />
 
 
 | Clase Real / Predicha | Predicho: Sin grieta | Predicho: Grieta |
